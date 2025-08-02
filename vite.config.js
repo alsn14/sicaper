@@ -1,10 +1,17 @@
+import { resolve } from 'path';
+
 /** @type {import('vite').UserConfig} */
 export default {
     plugins: [],
     build: {
         assetsDir: '',
         rollupOptions: {
-            input: ['scripts.js', 'styles.css', 'dark-mode.css', 'light-mode.css'],
+            input: {
+                main: resolve(__dirname, 'scripts.js'),
+                dark: resolve(__dirname, 'dark-mode.css'),
+                light: resolve(__dirname, 'light-mode.css'),
+                style: resolve(__dirname, 'styles.css'),
+            },
             output: {
                 assetFileNames: '[name][extname]',
                 entryFileNames: '[name].js',
