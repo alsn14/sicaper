@@ -11,9 +11,7 @@
                     <div class="d-flex justify-content-start align-items-center">
                         <h5 class="mb-0">{{ __("Daftar Jenis Barang") }}</h5>
                     </div>
-                    <!-- @if(Auth::user()->role->name != 'staff')
-                    
-                    @endif -->
+                  
                     <button class="btn btn-success" type="button"  data-toggle="modal" data-target="#TambahData" id="modal-button"><i class="fas fa-plus"></i> {{ __("Tambah Data") }}</button>
                 </div>
                 </div>
@@ -64,8 +62,7 @@
                                     <th class="border-bottom-0">{{ __("name") }}</th>
                                     <th class="border-bottom-0">{{ __("description") }}</th>
                                     <th class="border-bottom-0" width="1%">{{ __("action") }}</th>
-                                    @if(Auth::user()->role->name != 'staff')
-                                    @endif
+                                    
                                 </tr>
                             </thead>
                         </table>
@@ -108,8 +105,7 @@
                     data:'tindakan',
                     name:'tindakan'
                 }
-                // @if(Auth::user()->role->name != 'staff')
-                // @endif
+                
             ]
         }).buttons().container();
     }

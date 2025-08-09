@@ -97,5 +97,23 @@
     "tanggal_service_terakhir": "2025-10-30",
     "prediksi_jadwal_service": "2026-04-30",
     "belum_diservice": false
+  },
+  {
+    "id_barang": 18,
+    "nama_barang": "server",
+    "jenis_barang": "Komputer",
+    "tanggal_pembelian": "2025-04-01",
+    "tanggal_service_terakhir": null,
+    "prediksi_jadwal_service": "2025-10-01",
+    "belum_diservice": true
+  },
+  {
+    "id_barang": 19,
+    "nama_barang": "barang",
+    "jenis_barang": "Komputer",
+    "tanggal_pembelian": "2025-04-01",
+    "tanggal_service_terakhir": "2025-08-08",
+    "prediksi_jadwal_service": "2026-02-08",
+    "belum_diservice": false
   }
 ]

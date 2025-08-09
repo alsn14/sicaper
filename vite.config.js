@@ -1,21 +1,14 @@
-import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
 
-/** @type {import('vite').UserConfig} */
-export default {
-    plugins: [],
-    build: {
-        assetsDir: '',
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'scripts.js'),
-                dark: resolve(__dirname, 'dark-mode.css'),
-                light: resolve(__dirname, 'light-mode.css'),
-                style: resolve(__dirname, 'styles.css'),
-            },
-            output: {
-                assetFileNames: '[name][extname]',
-                entryFileNames: '[name].js',
-            },
-        },
-    },
-};
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
+    ],
+});

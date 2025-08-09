@@ -10,3 +10,5 @@ id_barang,nama_barang,jenis_barang,tanggal_pembelian,tanggal_service_terakhir
 "15","Monitor AOC 27B1H2","Hardware Output","2024-05-06","2025-03-08"
 "16","Mesin Absensi","Alat Pengolah Data","2024-07-10","2024-07-10"
 "17","laptop","Komputer","2025-07-30","2025-10-30"
+"18","server","Komputer","2025-04-01","2025-04-01"
+"19","barang","Komputer","2025-04-01","2025-08-08"
